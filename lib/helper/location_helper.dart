@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
-const GOOGLE_API = "AIzaSyAuRZaj9Sx4R509r28fItGHwCUXGM3bmrQ";
+const GOOGLE_API = "AIzaSyAuRZaj9Sx4R509r28fItGHwCUXGM3bmr";
 
 class LocationHelper {
   static String generateLocationPreviewImageURL(
