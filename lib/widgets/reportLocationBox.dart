@@ -22,7 +22,9 @@ class _LocationInputState extends State<LocationInput> {
   ReportLocation? _pickedLocation;
   bool _isGettingLocation = false;
 
-  static const googleapi = "AIzaSyAuRZaj9Sx4R509r28fItGHwCUXGM3bmrQ";
+  static const googleapi = "AIzaSyAuRZaj9Sx4R509r28fItGHwCUXGM3bmr";
+
+//+ Q
 
   String get locationImageURL {
     if (_pickedLocation == null) {
