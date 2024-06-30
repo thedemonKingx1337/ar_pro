@@ -6,7 +6,7 @@ import 'ReportedIncidentImageFullScreen.dart';
 
 class ReportedIncidents_DetailsScreen extends StatelessWidget {
   static const routeName = "/reportedIncidents_DetailsScreen";
-  static const googleapi = "AIzaSyAuRZaj9Sx4R509r28fItGHwCUXGM3bmrQ";
+  static const googleapi = "AIzaSyAuRZaxxxxxxxxxxxxxxxxxxxxx";
   final Report report;
 
   const ReportedIncidents_DetailsScreen({super.key, required this.report});
