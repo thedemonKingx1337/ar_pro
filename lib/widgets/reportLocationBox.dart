@@ -22,7 +22,7 @@ class _LocationInputState extends State<LocationInput> {
   ReportLocation? _pickedLocation;
   bool _isGettingLocation = false;
 
-  static const googleapi = "AIzaSyAuRZaj9Sx4R509r28fItGHwCUXGM3bmr";
+  static const googleapi = "Axxxxx_ReplaceWithYourAPI_xxxxxxxxxx";
 
 //+ Q
 
@@ -139,7 +139,8 @@ class _LocationInputState extends State<LocationInput> {
                 label: const Text("Current Location"),
                 style: OutlinedButton.styleFrom(
                   padding: const EdgeInsets.all(15),
-                  side: BorderSide(color: Theme.of(context).colorScheme.onPrimary, width: 5),
+                  side: BorderSide(
+                      color: Theme.of(context).colorScheme.onPrimary, width: 5),
                 ),
               ),
             ),
@@ -151,7 +152,8 @@ class _LocationInputState extends State<LocationInput> {
               label: const Text("Select Location"),
               style: OutlinedButton.styleFrom(
                 padding: const EdgeInsets.all(15),
-                side: BorderSide(color: Theme.of(context).colorScheme.onPrimary, width: 5),
+                side: BorderSide(
+                    color: Theme.of(context).colorScheme.onPrimary, width: 5),
               ),
             ))
           ],

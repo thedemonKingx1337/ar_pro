@@ -46,7 +46,7 @@ class ARViewState extends ConsumerState<ARView> {
   }
 
   Future<PlaceLocation?> getCurrentLocation() async {
-    const googleapi = "AIzaSyAuRZaj9Sx4R509r28fItGHwCUXGM3bmrQ";
+    const googleapi = "Axxxxx_ReplaceWithYourAPI_xxxxxxxxxx";
     try {
       final locationData = await Location().getLocation();
       setState(() {
@@ -196,7 +196,8 @@ class ARViewState extends ConsumerState<ARView> {
 
   void showSnackbar() {
     ScaffoldMessenger.of(context).clearSnackBars();
-    ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Capture success')));
+    ScaffoldMessenger.of(context)
+        .showSnackBar(const SnackBar(content: Text('Capture success')));
   }
 
   @override
@@ -282,8 +283,10 @@ class ARViewState extends ConsumerState<ARView> {
                         begin: Alignment.topLeft,
                         end: Alignment.bottomRight,
                         colors: [
-                          Color.fromRGBO(147, 128, 146, 0.8), // Adjusted opacity
-                          Color.fromRGBO(141, 102, 173, 0.8), // Adjusted opacity
+                          Color.fromRGBO(
+                              147, 128, 146, 0.8), // Adjusted opacity
+                          Color.fromRGBO(
+                              141, 102, 173, 0.8), // Adjusted opacity
                         ],
                       ),
                       // border:
@@ -305,7 +308,8 @@ class ARViewState extends ConsumerState<ARView> {
                                 child: Container(
                                     height: 40,
                                     width: 40,
-                                    child: Lottie.asset("assets/succesfulLottie.json")),
+                                    child: Lottie.asset(
+                                        "assets/succesfulLottie.json")),
                                 // child: Image.asset(
                                 //   'assets/sucess.png',
                                 //   height: 35,
@@ -406,7 +410,8 @@ class ARViewState extends ConsumerState<ARView> {
                                   child: Padding(
                                     padding: const EdgeInsets.all(8.0),
                                     child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
                                       children: [
                                         Text(
                                           "${DateFormat('dd-MM-yyyy').format(capturedAtDateTime)}",

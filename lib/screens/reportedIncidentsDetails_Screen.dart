@@ -6,7 +6,7 @@ import 'ReportedIncidentImageFullScreen.dart';
 
 class ReportedIncidents_DetailsScreen extends StatelessWidget {
   static const routeName = "/reportedIncidents_DetailsScreen";
-  static const googleapi = "AIzaSyAuRZaxxxxxxxxxxxxxxxxxxxxx";
+  static const googleapi = "Axxxxx_ReplaceWithYourAPI_xxxxxxxxxx";
   final Report report;
 
   const ReportedIncidents_DetailsScreen({super.key, required this.report});
@@ -19,7 +19,8 @@ class ReportedIncidents_DetailsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final severityText = report.severity.toString().split('.').last.toUpperCase();
+    final severityText =
+        report.severity.toString().split('.').last.toUpperCase();
 
     return Scaffold(
       appBar: AppBar(
@@ -72,10 +73,8 @@ class ReportedIncidents_DetailsScreen extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 8),
       child: Text(
         report.title,
-        style: Theme.of(context)
-            .textTheme
-            .titleLarge!
-            .copyWith(color: Theme.of(context).colorScheme.onBackground, fontSize: 20),
+        style: Theme.of(context).textTheme.titleLarge!.copyWith(
+            color: Theme.of(context).colorScheme.onBackground, fontSize: 20),
       ),
     );
   }
@@ -93,10 +92,9 @@ class ReportedIncidents_DetailsScreen extends StatelessWidget {
           child: Text(
             report.description,
             textAlign: TextAlign.center,
-            style: Theme.of(context)
-                .textTheme
-                .titleMedium!
-                .copyWith(color: Theme.of(context).colorScheme.onBackground, fontSize: 15),
+            style: Theme.of(context).textTheme.titleMedium!.copyWith(
+                color: Theme.of(context).colorScheme.onBackground,
+                fontSize: 15),
           ),
         ),
       ),
@@ -135,7 +133,8 @@ class ReportedIncidents_DetailsScreen extends StatelessWidget {
               borderRadius: BorderRadius.circular(15),
               onTap: () => Navigator.of(context).push(
                 MaterialPageRoute(
-                  builder: (_) => ReportedIncidentImageFullScreen(imageFile: image),
+                  builder: (_) =>
+                      ReportedIncidentImageFullScreen(imageFile: image),
                 ),
               ),
               child: Image.file(
